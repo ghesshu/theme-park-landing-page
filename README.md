@@ -19,8 +19,8 @@ This is a Landing page for a Theme Park
 
 ### Links
 
-- Solution URL: (https://github.com/ghesshu/Manage-Landing-Page-Master)
-- Live Site URL: (https://manage-landing-page-master-ghesshu.vercel.app/)
+- Solution URL: (https://github.com/ghesshu/theme-park-landing-page)
+- Live Site URL: (theme-park-landing-page.vercel.app)
 
 
 ### Built with
