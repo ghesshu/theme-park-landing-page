@@ -20,7 +20,7 @@ This is a Landing page for a Theme Park
 ### Links
 
 - Solution URL: (https://github.com/ghesshu/theme-park-landing-page)
-- Live Site URL: (theme-park-landing-page.vercel.app)
+- Live Site URL: (https://theme-park-landing-page.vercel.app)
 
 
 ### Built with
