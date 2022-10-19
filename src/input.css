@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.x-round{
+    border: solid  rgb(134, 69, 134) 2px;
+    border-radius: 50%;
+    padding: 8px;
+    color: rgb(134, 69, 134);
+}
+
+.hero{
+    background-image: url(../src/images/disney.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.hero-2{
+    background-image: url(../src/images/mickey.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
