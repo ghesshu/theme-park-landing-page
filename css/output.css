@@ -1005,6 +1005,12 @@ video {
   height: auto;
 }
 
+@media (min-width: 640px) {
+  .sm\:p-14 {
+    padding: 3.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:m-24 {
     margin: 6rem;
@@ -1070,6 +1076,10 @@ video {
     padding: 7rem;
   }
 
+  .md\:p-14 {
+    padding: 3.5rem;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1092,6 +1102,11 @@ video {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1152,5 +1167,9 @@ video {
 @media (min-width: 1280px) {
   .xl\:m-56 {
     margin: 14rem;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 }
