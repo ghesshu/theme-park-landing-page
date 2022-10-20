@@ -561,6 +561,10 @@ video {
   margin: 2.75rem;
 }
 
+.-m-4 {
+  margin: -1rem;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -782,12 +786,12 @@ video {
   padding: 1rem;
 }
 
-.p-14 {
-  padding: 3.5rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
 }
 
 .p-1 {
@@ -1031,6 +1035,10 @@ video {
 
   .md\:p-28 {
     padding: 7rem;
+  }
+
+  .md\:p-14 {
+    padding: 3.5rem;
   }
 
   .md\:py-0 {
