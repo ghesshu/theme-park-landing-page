@@ -10,7 +10,7 @@
 }
 
 .hero{
-    background-image: url(../src/images/disney.png);
+    background-image: url(../src/images/disney.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .hero-2{
-    background-image: url(../src/images/mickey.png);
+    background-image: url(../src/images/mickey.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

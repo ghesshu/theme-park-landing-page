@@ -594,52 +594,16 @@ video {
   height: 9rem;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-11 {
-  height: 2.75rem;
-}
-
-.h-28 {
-  height: 7rem;
-}
-
 .h-20 {
   height: 5rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .w-36 {
   width: 9rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .w-20 {
@@ -738,12 +702,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-14 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -871,6 +829,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -896,11 +859,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -921,14 +879,14 @@ video {
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-3xl {
@@ -980,6 +938,11 @@ video {
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .x-round{
   border: solid  rgb(134, 69, 134) 2px;
   border-radius: 50%;
@@ -988,7 +951,7 @@ video {
 }
 
 .hero{
-  background-image: url(../src/images/disney.png);
+  background-image: url(../src/images/disney.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -997,18 +960,12 @@ video {
 }
 
 .hero-2{
-  background-image: url(../src/images/mickey.png);
+  background-image: url(../src/images/mickey.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: auto;
-}
-
-@media (min-width: 640px) {
-  .sm\:p-14 {
-    padding: 3.5rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1076,10 +1033,6 @@ video {
     padding: 7rem;
   }
 
-  .md\:p-14 {
-    padding: 3.5rem;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1094,6 +1047,11 @@ video {
     text-align: left;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1102,11 +1060,6 @@ video {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
 
@@ -1136,26 +1089,6 @@ video {
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
-  }
-
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .lg\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .lg\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .lg\:px-40 {
