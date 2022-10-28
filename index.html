@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme Park</title>
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="src/swiper-bundle.min.css">
 </head>
 <body class="text-slate-600">
     
 <!-- Navbar -->
-<nav class="flex flex-col px-5 space-y-3">
-    <div class=" flex justify-between items-center pt-3">
+<nav class="flex flex-col px-8 space-y-3">
+    <div class=" flex justify-between items-center pt-3 lg:mx-16">
         <h1 class="text-sm md:text-lg">HOURS & CALENDER  |  🌐 LANGUAGE</h1>
 
         <div class="flex justify-between items-center space-x-3">
@@ -36,7 +37,7 @@
     <a id="menu-btn" href="#"><img src="src/images/Hamburger Menu copy.svg" alt=""></a>
 </div>
 
-<div id="menu" class="hidden md:justify-between mx-12 text-1xl font-bold md:flex flex-col md:flex-row space-y-4 justify-center items-center">
+<div id="menu" class="hidden md:justify-between mx-12 text-2xl font-bold md:flex flex-col md:flex-row space-y-4 justify-center items-center">
     <a href="#">Tickets & Passes</a>
     <a href="#">Shop</a>
     <a href="#">Experience</a>
@@ -66,13 +67,15 @@
     
 </div>
 
-<div id="closee" class="">
-    <a href="#" class="x-round text-fuchsia-900" >x</a>
+<div id="closee" class="x-round text-fuchsia-900">
+    <a href="#" ><img src="src/images/close.gif" class="h-4" alt=""></a>
 </div>
 </section>
 
 <!-- Hero Section -->
-<section class="hero flex px-11 py-36 md:p-36 justify-between">
+<section class="swiper mySwiper">
+<div class="swiper-wrapper">
+<div class="hero swiper-slide flex px-11 py-36 md:p-36 justify-between">
 
     <div class="space-y-10 text-white">
     <h1 class="text-3xl md:text-6xl">We can't</h1>
@@ -81,6 +84,12 @@
     <p class="font-bold">We're open for the season...</p>
 
     </div>
+
+</div>
+</div>
+
+<div class="hidden md:block swiper-button-next border-solid bg-white rounded-md border-2 p-6 "></div>
+<div class="hidden md:block swiper-button-prev border-solid bg-white border-2 rounded-md p-6 bg"></div>
 
 </section>
 
@@ -108,8 +117,11 @@
 <section class="flex justify-between space-x-4 items-center p-8 lg:px-24 bg-fuchsia-900">
 
 <div class="space-y-4 lg::w-1/4">
-<h1 class="text-5xl text-white font-bold">Special Events</h1>
-<p class="text-2xl text-white font-bold">View All Upcoming Events <span class="text-orange-500 text-lg">-></span></p>
+<h1 class="text-4xl text-white font-bold">Special Events</h1>
+<div class="flex  items-center justify-between">
+    <p class="text-xl text-white font-bold">View All Upcoming Events</p>
+<img src="src/images/foward-arrow.gif" class="h-6 p" alt="">
+</div>
 </div>
 
 <div class="flex flex-nowrap justify-between items-center space-x-5 lg:w-3/4 md:w-2/4">
@@ -171,13 +183,16 @@
 <p class="text-sm">Our resort is your smoky mountain home away from home filled with family experiences worth sharing together</p>
 <div class=""><a href="#" class="border-solid border-2 p-2">COME ON IN</a></div>
 
-<div class="flex space-x-12 items-center justify-center p-4 ">
-<p><a href="#" class="border-solid border-2 px-4 py-3"> < </a></p>
-<p><a href="#" class="border-solid border-2 px-4 py-3"> > </a></p>
+<div class="lg:flex space-x-12 items-center justify-center md:justify-start hidden  py-4 ">
+<p><a href="#" class="border-solid border-2 px-4 py-3 pre-btn"> < </a></p>
+<p><a href="#" class="border-solid border-2 px-4 py-3 nxt-btn"> > </a></p>
+
+<!-- <div class="swiper-button-next border-solid border-slate-600 border-2 p-6 "></div>
+<div class="swiper-button-next border-solid border-slate-600 border-2 p-6 "></div> -->
 </div>
 </div>
 
-<div class="flex px-4">
+<div class="flex px-4 product-container overflow-auto scroll-smooth">
 <img src="src/images/park 2.png" alt="">
 <img class="p-8 hidden xl:flex" src="src/images/park 1.png" alt="">
 </div>
@@ -203,7 +218,7 @@
     <h1 class="font-bold">Need help planning your visit?</h1>
     <h1 class="text-4xl font-bold">WHAT'S THE OCCASION?</h1>
 
-    <ul class="flex justify-between -m-4 " >
+    <ul class="flex justify-between -m-4 " id="step-o">
     <li class="flex flex-col items-center space-y-2">
         <img class="h-20 w-20" src="src/images/family.gif" alt="">
         <h1 class="text-xs font-bold" >Hanging out with <br> friends</h1>
@@ -223,30 +238,79 @@
     
     </ul>
 
-   <div class=""> 
-    <a href="#" class="text-white bg-fuchsia-900 px-6 py-1 rounded-2xl">Step 1 -f 3 -></a></div>
-    </div>
+
+    <div class="text-center py-11 hidden flex-col " id="step-t">
+        <form action="">
+            <label for="email"></label>
+            <input class="pl-8 py-3 text-black border-4"  type="email" id="email" name="email" placeholder="Enter email">
+            <button class="border-solid -ml-2 border-fuchsia-900  border-4 p-3 font-bold">Send</button>
+        </form>
+        <h1>Enter Your Email</h1>
+        </div>
+
+    
+        <div class=" hidden flex-col items-center justify-center space-y-4 p-14 bg-fuchsia-900 text-white xl: mx-28" id="step-h">
+
+            <h1 class="text-2xl font-bold">Processing</h1>
+            <p class="text-lg">You'll recievee an email shortly containing all our plans</p>
+            <div class=""><a href="#" class="border-solid border-2 p-2">Learn more</a></div>
+        </div>
+    
+
+   <div class="flex justify-center">
+    <div class="" id="oBtn"> 
+        <button class="text-white bg-fuchsia-900 px-6 py-1 rounded-2xl">Step 1 of 3</button>
+        </div>
+       
+        <div class="text-center hidden" id="tBtn"> 
+        <button class="text-white bg-fuchsia-900 px-6 py-1 rounded-2xl justify-center items-center">Step 2 of 3</button></div>
+        
+    
+        <div class="text-center hidden" id="hBtn"> 
+        <button class="text-white bg-fuchsia-900 px-6 py-1 rounded-2xl">Step 3 of 3</button></div>
+        
+    
+        <div class="text-centerb hidden" id="fBtn"> 
+            <button class="text-white bg-fuchsia-900 px-6 py-1 rounded-2xl">And You Are Done</button></div>
+            </div>
+   </div>
+
+</div>
+
+
 </section>
+ 
     
 
 <!-- Brands List -->
-<section class="p-6 ">
-<div class="hidden justify-between items-center md:flex border-solid border-black border-t-2">
-<h1 class="border-solid border-2 border-black p-1 px-2"><</h1>
-<!-- <div class="flex justify-between">
+<section class="p-6 hidden lg:flex">
+<div class="swiper mySwiper">
 
-</div> -->
+<div class="swiper-wrapper ">
+<div class="hidden swiper-slide justify-between items-center md:flex border-solid border-black border-t-2">
+<!-- <h1 class="border-solid border-2 border-black p-1 px-2"><</h1> -->
+<!-- <div class="flex justify-between"></div> -->
+
+
+<div class=""></div>
 <img class="h-24 object-scale-down " src="src/images/coke.png" alt="">
 <img class="h-24" src="src/images/toyota.png" alt="">
 <img class="h-24" src="src/images/fanta.png" alt="">
 <img class="h-24" src="src/images/sprite.png" alt="">
-<h1 class="border-solid border-2 border-black p-1 px-2">></h1>
+<div class=""></div>
+<!-- <h1 class="border-solid border-2 border-black p-1 px-2">></h1> -->
+</div>
+
+</div>
+
+<div class="swiper-button-next border-solid border-2 p-6"></div>
+<div class="swiper-button-prev  border-solid border-2 p-6 text-black"></div>
+<div class="swiper-pagination"></div>
 </div>
 </section>
 
-
 <!-- Footer -->
-<Footer class="p-8 md:p text-white bg-fuchsia-900">
+<footer class="p-8 md:p text-white bg-fuchsia-900">
 
 <section class="">
 
@@ -299,7 +363,7 @@
 </div>
 </div>
 
-</div>
+
 </section>
 
 <section>
@@ -318,8 +382,25 @@
 <h1>Powered by Rixrod</h1>
 </section>
 
-</Footer>
+</footer>
 
 <script src="src/script.js"></script>
+<script src="src/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
